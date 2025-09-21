@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pickleball Map</title>
+
+  <!-- ArcGIS Embeddable Map Component -->
+  <script type="module" src="https://js.arcgis.com/embeddable-components/4.33/arcgis-embeddable-components.esm.js"></script>
+
+  <!-- Basic styling -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 1.5em;
+      text-align: center;
+      color: #333;
+    }
+    arcgis-embedded-map {
+      height: 80vh; /* 80% of viewport height */
+      width: 90vw;  /* 90% of viewport width */
+      max-width: 1000px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <h1>Pickleball Map</h1>
+
+  <!-- ArcGIS Embedded Map -->
+  <arcgis-embedded-map
+    item-id="3a328e5a6f7d45bdbd46553684fb0ee0"
+    theme="light"
+    heading-enabled
+    center="-79.3500596464283,43.69983374605708"
+    scale="288895.277144"
+    portal-url="https://utoronto.maps.arcgis.com">
+  </arcgis-embedded-map>
+</body>
+</html>
